@@ -1,0 +1,19 @@
+.headline {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 50.12px;
+}
+
+@media screen and (max-width: 1024px) {
+    .headline {
+        font-size: 2.18rem;
+        line-height: 43.86px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headline {
+        font-size: 1.875rem;
+        line-height: 37.59px;
+    }
+}

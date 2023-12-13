@@ -1,0 +1,45 @@
+.menu-up {
+    &__item {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.375rem;
+        line-height: 27.57px;
+        color: $primary-color;
+        transition: all .3s linear .1s;
+        &:hover {
+            color: $button-color;
+        }
+    }
+}
+
+.menu-up__item:not(:last-child)::after{
+    display: inline-block;
+    content: "";
+    margin: auto 25px;
+    width: 1.5px;
+    height: 16px;
+    background-color: #D8D5D5;
+}
+
+@media screen and (max-width: 1024px){
+    .menu-up {
+        &__item {
+            font-size: 1.125rem;
+            line-height: 22.55px;
+        }
+    }
+    .menu-up__item:not(:last-child)::after{
+        height: 13px;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .menu-up__item:not(:last-child)::after{
+            display: block;
+            margin: 10px auto;
+            width: 16px;
+            height: 1.5px;
+    }
+}
+
+

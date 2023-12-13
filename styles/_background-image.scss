@@ -1,0 +1,46 @@
+.background-image {
+    color: $primary-color;
+    padding: 218px 0 185px;
+    &__title {    
+        margin: 0 auto;   
+        font-size: 4.6rem;
+        line-height: 103.43px;
+        text-transform: uppercase;
+        max-width: 800px;
+    }
+    &__description { 
+        font-size: 1.56rem;
+        line-height: 31.33px;
+        margin: 35px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .background-image {
+        padding-top: 183px 0 153px;
+        &__title {
+            font-size: 3.75rem;
+            line-height: 73.01px;
+            max-width: 697px;    
+        }
+        &__description {
+            font-size: 1.125rem;
+            line-height: 22.55px;
+            margin-bottom: 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-image {
+        padding: 171px 0 99px;
+        &__title {
+            font-size: 3.125rem;
+            line-height: 57.65px;
+            max-width: 329px;
+        }
+        &__description {
+            margin-bottom: 66px;
+        }
+    }
+}

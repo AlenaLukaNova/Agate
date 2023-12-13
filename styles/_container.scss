@@ -1,0 +1,31 @@
+.container {
+    max-width: 1189px;
+    margin: 0 auto;
+    padding: 44px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 951px;
+        margin-left: 42px;
+        margin-right: 31px;
+        padding: 13px 0;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 731px;
+        margin-left: 24px;
+        margin-right: 13px;
+        padding: 8px 0;
+    }
+}
+@media screen and (max-width: 477px){
+    .container{
+    margin: 0 25px;
+        }
+    }

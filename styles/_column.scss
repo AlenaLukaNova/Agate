@@ -1,0 +1,118 @@
+.column {
+    width: calc((100% - 2*50px)/3);
+    max-width: 360px;
+    text-align: left;
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+    &__dish{
+    margin-top: 35px;
+    }
+    &__name {
+        font-size: 1.875rem;
+        line-height: 37.59px;
+    }
+    &__text {
+        max-width: 360px;
+        font-size: 1.125rem;
+        line-height: 22.55px;
+        color: $color-txt_column-text;
+        margin: 15px 0;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 22.55px;
+    }
+    &__image {
+        img{
+        max-width: 360px;
+        width: 100%;
+        }
+    }
+    &.column--red::before {
+        @include color-ellipse;
+        content: "HOT!";
+        background-color: #D33B3B;
+    }
+    &.column--green::before {
+        @include color-ellipse;
+        content: "NEW!";
+        background-color: #B3E151;
+    }
+    &.column--orange::before {
+        @include color-ellipse;
+        content: "HIT!";
+        background-color: #E5A434;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .column {
+        width: calc((100% - 2*92px)/3);
+        max-width: 253px;
+        &:not(:last-child) {
+            margin-right: 92px;
+        }
+        &__dish{
+            margin-top: 15px;
+            }
+        &__name {
+            font-size: 1.56rem;
+            line-height: 31.33px;
+            margin-top: 15px;
+        }
+        &__text {
+            max-width: 253px;
+            font-size: 0.93rem;
+            line-height: 19px;
+            margin: 19px 0 15px;     
+        }
+        &__price {
+            font-size: 0.93rem;
+            line-height: 18.8px;  
+        }
+        &__image {
+            img{
+            max-width: 252px;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        display: flex;
+        width: 100%;
+        max-width: 692px;
+        &:not(:last-child) {
+            margin-right:0;
+            margin-bottom: 58px;  
+        }
+        &__dish{
+            margin: 0 0 0 24px;
+            padding-top: 17px;
+        }
+        &__name {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 25px;
+        }
+        &__text {
+            margin: 20px 0;
+            max-width: 348px;
+        }
+        &__price {
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 22.55px;
+        }
+        &__image {
+            img{
+            max-width: 320px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+.networks {
+    &__page {
+        @include icon-decoration;
+    }
+    & i {
+        font-size: 1.5rem;
+        color: #000;
+    }
+}

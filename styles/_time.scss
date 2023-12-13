@@ -1,0 +1,15 @@
+.time {
+    margin: 60px auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .time {
+        margin: 50px auto 47px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .time {
+        margin: 40px auto 35px;
+    }
+}

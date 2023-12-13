@@ -1,0 +1,20 @@
+.menu {
+    &__text{
+        margin: 30px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        padding: 80px 0;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 70px 24px 70px 52px;
+        &__text{
+            margin: 20px 0 60px;
+        }
+    }
+}

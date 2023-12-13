@@ -1,0 +1,15 @@
+.restorant-photo {
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .restorant-photo {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .restorant-photo {
+        padding-top: 70px;
+    }
+}

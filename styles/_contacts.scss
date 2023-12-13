@@ -1,0 +1,21 @@
+.contacts {
+    &__link {
+        @include link-footer;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts {
+        &__link {
+            @include link-footer-screen-size-1024;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__link {
+            @include link-footer-screen-size-768;
+        }
+    }
+}

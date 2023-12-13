@@ -1,0 +1,21 @@
+.title {
+    margin-bottom: 60px;
+    font-size: 4.06rem;
+    line-height: 81.45px;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        margin-bottom: 50px;
+        font-size: 3.125rem;
+        line-height: 62.65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        line-height: 50.12px;
+    }
+}

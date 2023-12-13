@@ -1,0 +1,15 @@
+.footer {
+    @include background-down;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        @include background-down-screen-size-1024;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        @include background-down-screen-size-768;
+    }
+}

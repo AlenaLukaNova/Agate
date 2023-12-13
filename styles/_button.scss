@@ -1,0 +1,14 @@
+    .button--white {
+        @include button-style;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+    }
+    
+    .button--black {
+        @include button-style;
+        border: 2px solid $basic-color;
+        color: $basic-color;
+        &:hover {
+            color: $primary-color;
+        }
+    }

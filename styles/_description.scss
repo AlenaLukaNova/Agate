@@ -1,0 +1,24 @@
+.description {
+    font-weight: 300;
+    font-size: 1.875rem;
+    line-height: 41.19px;
+    margin-top: 30px;
+    max-width: 939px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .description {
+        font-size: 1.375rem;
+        line-height: 30.12px;
+        max-width: 691px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 1.25rem;
+        line-height: 27.46px;
+        max-width: 626px;
+    }
+}
